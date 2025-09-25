@@ -9,8 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        background: 'rgb(var(--background) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        primary: 'rgb(var(--primary) / <alpha-value>)',
+        secondary: 'rgb(var(--secondary) / <alpha-value>)',
+        muted: 'rgb(var(--muted) / <alpha-value>)',
+        accent: 'rgb(var(--accent) / <alpha-value>)',
+        destructive: 'rgb(var(--destructive) / <alpha-value>)',
+      },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
       },
     },
   },
